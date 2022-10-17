@@ -19,3 +19,6 @@ make uninstall_templates
 ## Cómo usar
 En Xcode, ``File > New > File`` y seleccionar el tipo de plantilla en la sección de Templates.
 
+Para más detalles de como utilizar los templates, diríjase a nuestra [documentación](https://sites.google.com/mercadolibre.cl/wiki-ioscashrails/arquitectura-para-desarrollar-templates/xcode-templates?authuser=0).
+
+---
