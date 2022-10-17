@@ -12,7 +12,7 @@ make install_templates
 
 ## Desinstalar
 ```bash
-cd xcode-template
+cd fury_ios_xcode_templates
 make uninstall_templates
 ```
 
