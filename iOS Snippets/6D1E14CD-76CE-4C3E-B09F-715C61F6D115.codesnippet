@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>sc_fasterUser</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        usernameField.text = "TESTTQRXU8WD"
+        passwordField.text = "qatest9380"
+        savePressed()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6D1E14CD-76CE-4C3E-B09F-715C61F6D115</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Add the following snippet into your last viewDidLoad line from LoginAddViewController</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Faster user to LoginAddViewController</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
