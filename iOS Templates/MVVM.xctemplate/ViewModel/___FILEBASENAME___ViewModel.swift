@@ -22,6 +22,6 @@ public final class ___VARIABLE_featureName___ViewModel {
 }
 
 // MARK: - Functions {}
-extension ___VARIABLE_featureName___ViewController: ___VARIABLE_featureName___ViewModelProtocol {
+extension ___VARIABLE_featureName___ViewModel: ___VARIABLE_featureName___ViewModelProtocol {
 
 }
