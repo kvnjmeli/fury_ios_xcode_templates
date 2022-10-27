@@ -1,5 +1,4 @@
 import Foundation
-import RxSwift
 import MLCommonUIComponents
 
 final class ___VARIABLE_featureName___ProviderMock: ___VARIABLE_featureName___ProviderProtocol {
@@ -10,15 +9,15 @@ final class ___VARIABLE_featureName___ProviderMock: ___VARIABLE_featureName___Pr
         self.jsonFileName = jsonFileName
     }
 
-    func fetchInitialConfig() -> Single<___VARIABLE_featureName___Model> {
+    func fetchInitialConfig() -> Result<___VARIABLE_featureName___Model, Error> {
         if let mockName = TestAppMocksManager.shared().getMockName(for: jsonFileName) {
             let responseMock = COJsonParser.parseMainBundle(fromResource: mockName, to: ___VARIABLE_featureName___Model.self, decodingStrategy: .convertFromSnakeCase)
             guard let responseMock = responseMock else {
-                return Single.error(COErrors.emptyError)
+                return .failure(.emptyError)
             }
-            return Single.just(responseMock)
+            return .success(responseMock)
         } else {
-            return Single.error(COErrors.emptyError)
+            return .failure(.emptyError)
         }
     }
 }
