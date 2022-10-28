@@ -20,7 +20,7 @@ final class ___VARIABLE_featureName___ViewController: UIViewController {
     }
 }
 
-// MARK: View lifecycle
+// MARK: - View lifecycle
 extension ___VARIABLE_featureName___ViewController {
     override public func viewDidLoad() {
 		super.viewDidLoad()
