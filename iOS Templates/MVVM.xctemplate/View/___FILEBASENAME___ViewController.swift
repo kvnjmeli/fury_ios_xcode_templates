@@ -4,6 +4,7 @@ import MLCommonUIComponents
 
 // MARK: - ___VARIABLE_featureName___ViewController
 final class ___VARIABLE_featureName___ViewController: UIViewController {
+
     // MARK: - Variables
     private var ___VARIABLE_featureName___ViewModel: ___VARIABLE_featureName___ViewModelProtocol
     private var anyCancellable = Set<AnyCancellable>()
