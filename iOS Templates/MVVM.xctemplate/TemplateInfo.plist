@@ -1,104 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>DefaultCompletionName</key>
-	<string>Myfeature</string>
-  <key>Description</key>
-  <string>This generates a new feature using MVVM architecture.</string>
-  <key>Kind</key>
-  <string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
-  <key>Options</key>
-  <array>
 	<dict>
+		<key>DefaultCompletionName</key>
+		<string>Myfeature</string>
 		<key>Description</key>
-		<string>Feature name to create</string>
-		<key>Identifier</key>
-		<string>featureName</string>
-		<key>Name</key>
-		<string>Feature Name:</string>
-		<key>NotPersisted</key>
-		<true/>
-		<key>Required</key>
-		<true/>
-		<key>Type</key>
-		<string>text</string>
-		<key>Default</key>
-		<string>ModuleName</string>
-	</dict>
-    <dict>
-			<key>Default</key>
-			<string>___VARIABLE_featureName:identifier___</string>
-			<key>Identifier</key>
-			<string>productName</string>
-			<key>Type</key>
-			<string>static</string>
-    </dict>
+		<string>This generates a new feature using MVVM architecture.</string>
+		<key>Kind</key>
+		<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+		<key>Options</key>
+		<array>
+			<dict>
+				<key>Description</key>
+				<string>Feature name to create</string>
+				<key>Identifier</key>
+				<string>featureName</string>
+				<key>Name</key>
+				<string>Feature Name:</string>
+				<key>NotPersisted</key>
+				<true/>
+				<key>Required</key>
+				<true/>
+				<key>Type</key>
+				<string>text</string>
+				<key>Default</key>
+				<string>ModuleName</string>
+			</dict>
+			<dict>
+					<key>Default</key>
+					<string>___VARIABLE_featureName:identifier___</string>
+					<key>Identifier</key>
+					<string>productName</string>
+					<key>Type</key>
+					<string>static</string>
+			</dict>
 
-    <dict>
-			<key>Default</key>
-			<string>___VARIABLE_featureName:identifier___ViewController</string>
-			<key>Description</key>
-			<string>View name</string>
-			<key>Identifier</key>
-			<string>viewControllerName</string>
-			<key>Name</key>
-			<string>View Controller Name:</string>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>static</string>
-    </dict>
-	<dict>
-			<key>Default</key>
-			<string>___VARIABLE_featureName:identifier___ViewModel</string>
-			<key>Description</key>
-			<string>View model name</string>
-			<key>Identifier</key>
-			<string>viewModelName</string>
-			<key>Name</key>
-			<string>View Model Name:</string>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>static</string>
-    </dict>
-	<dict>
-			<key>Default</key>
-			<string>___VARIABLE_featureName:identifier___Provider</string>
-			<key>Description</key>
-			<string>Provider name</string>
-			<key>Identifier</key>
-			<string>providerName</string>
-			<key>Name</key>
-			<string>Provider Name:</string>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>static</string>
-    </dict>
-	<dict>
-			<key>Default</key>
-			<string>___VARIABLE_featureName:identifier___Model</string>
-			<key>Description</key>
-			<string>Model name</string>
-			<key>Identifier</key>
-			<string>modelName</string>
-			<key>Name</key>
-			<string>Model Name:</string>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>static</string>
-    </dict>
-  </array>
-  <key>Platforms</key>
-  <array>
-		<string>com.apple.platform.iphoneos</string>
-  </array>
-	<key>SortOrder</key>
-	<string>0</string>
-  <key>Summary</key>
-  <string>This template generate a new feature using MVVM architecture.</string>
-</dict>
+			<dict>
+				<key>Identifier</key>
+				<string>generateEntityFile</string>
+				<key>Name</key>
+				<string>Include .xib?</string>
+				<key>Description</key>
+				<string>Create a xib file with the same ViewControllerName name</string>
+				<key>Type</key>
+				<string>popup</string>
+				<key>Default</key>
+				<string>No include XIB</string>
+				<key>Values</key>
+				<array>
+					<string>No include XIB</string>
+					<string>Include XIB</string>
+				</array>
+			</dict>
+			<dict>
+					<key>Default</key>
+					<string>___VARIABLE_featureName:identifier___Model</string>
+					<key>Description</key>
+					<string>Model name</string>
+					<key>Identifier</key>
+					<string>modelName</string>
+					<key>Name</key>
+					<string>Model Name:</string>
+					<key>Required</key>
+					<true/>
+					<key>Type</key>
+					<string>static</string>
+			</dict>
+			<dict>
+					<key>Default</key>
+					<string>___VARIABLE_featureName:identifier___Provider</string>
+					<key>Description</key>
+					<string>Provider name</string>
+					<key>Identifier</key>
+					<string>providerName</string>
+					<key>Name</key>
+					<string>Provider Name:</string>
+					<key>Required</key>
+					<true/>
+					<key>Type</key>
+					<string>static</string>
+			</dict>
+			<dict>
+					<key>Default</key>
+					<string>___VARIABLE_featureName:identifier___ProviderMock</string>
+					<key>Description</key>
+					<string>Provider Mock name</string>
+					<key>Identifier</key>
+					<string>providerMock</string>
+					<key>Name</key>
+					<string>Provider Mock Name:</string>
+					<key>Required</key>
+					<true/>
+					<key>Type</key>
+					<string>static</string>
+			</dict>
+			<dict>
+					<key>Default</key>
+					<string>___VARIABLE_featureName:identifier___ViewController</string>
+					<key>Description</key>
+					<string>View name</string>
+					<key>Identifier</key>
+					<string>viewControllerName</string>
+					<key>Name</key>
+					<string>View Controller Name:</string>
+					<key>Required</key>
+					<true/>
+					<key>Type</key>
+					<string>static</string>
+			</dict>
+			<dict>
+					<key>Default</key>
+					<string>___VARIABLE_featureName:identifier___ViewModel</string>
+					<key>Description</key>
+					<string>View model name</string>
+					<key>Identifier</key>
+					<string>viewModelName</string>
+					<key>Name</key>
+					<string>View Model Name:</string>
+					<key>Required</key>
+					<true/>
+					<key>Type</key>
+					<string>static</string>
+			</dict>
+		</array>
+		<key>Platforms</key>
+		<array>
+			<string>com.apple.platform.iphoneos</string>
+		</array>
+		<key>SortOrder</key>
+		<string>1</string>
+		<key>Summary</key>
+		<string>This template generate a new feature using MVVM architecture.</string>
+	</dict>
 </plist>
