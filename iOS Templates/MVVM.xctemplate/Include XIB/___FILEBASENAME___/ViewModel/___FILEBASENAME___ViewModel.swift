@@ -1,6 +1,5 @@
 import UIKit
 import Combine
-import MLCommonUIComponents
 
 // MARK: - ___VARIABLE_featureName___ViewModelProtocol
 protocol ___VARIABLE_featureName___ViewModelProtocol {
@@ -13,7 +12,7 @@ public final class ___VARIABLE_featureName___ViewModel {
     // MARK: - Variables
     private let provider: ___VARIABLE_featureName___ProviderProtocol?
 
-    private let disposeBag = DisposeBag()
+    private var anyCancellable = Set<AnyCancellable>()
 
     // MARK: - Initializers
     init(provider: ___VARIABLE_featureName___ProviderProtocol = ___VARIABLE_featureName___Provider()) {
