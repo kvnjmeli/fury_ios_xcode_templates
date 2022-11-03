@@ -2,7 +2,7 @@ import Foundation
 
 // MARK: - ___VARIABLE_featureName___ProviderProtocol
 protocol ___VARIABLE_featureName___ProviderProtocol {
-    func fetchInitialConfig() -> Result<___VARIABLE_featureName___Model, Error>
+    <#func writeSomeFunction()#>
 }
 
 // MARK: - ___VARIABLE_featureName___Provider
